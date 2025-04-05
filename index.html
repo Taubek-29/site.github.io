@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Создай крутое портфолио</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Анимированный фон -->
+    <div class="bg-animation">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+
+    <!-- Главный экран -->
+    <header class="animate__animated animate__fadeIn">
+        <h1>Создай портфолио, <span class="highlight">которое запомнят</span></h1>
+        <p>Профессиональный конструктор с потрясающими анимациями</p>
+        <a href="#generator" class="btn pulse">Начать создание →</a>
+    </header>
+
+    <!-- Форма генерации -->
+    <section id="generator" class="form-container animate__animated animate__fadeInUp">
+        <h2>Расскажите о себе</h2>
+        <form id="portfolio-form">
+            <input type="text" placeholder="Ваше имя" id="name" required>
+            <input type="text" placeholder="Профессия" id="job" required>
+            <textarea placeholder="О себе" id="about" required></textarea>
+            <button type="submit" class="btn-generate">Сгенерировать портфолио</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ваше портфолио</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .slide {
+            min-height: 100vh;
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            animation: fadeIn 1s;
+        }
+        .controls {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            display: flex;
+            gap: 10px;
+        }
+        .control-btn {
+            background: white;
+            color: var(--dark);
+            border: none;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            font-size: 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-animation"></div>
+    
+    <!-- Слайд 1: Заголовок -->
+    <section class="slide" id="title-slide">
+        <h1 id="portfolio-name"></h1>
+        <p id="portfolio-job"></p>
+    </section>
+
+    <!-- Слайд 2: О себе -->
+    <section class="slide" id="about-slide">
+        <h2>Обо мне</h2>
+        <p id="about-text"></p>
+    </section>
+
+    <!-- Кнопки управления -->
+    <div class="controls">
+        <button class="control-btn" id="prev-btn">←</button>
+        <button class="control-btn" id="next-btn">→</button>
+    </div>
+
+    <script src="portfolio.js"></script>
+</body>
+</html>
